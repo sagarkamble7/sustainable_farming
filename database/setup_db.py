@@ -3,7 +3,7 @@ import sqlite3
 def create_database():
     conn = sqlite3.connect("sustainable_farming.db")
     cursor = conn.cursor()
-
+    
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS farmer_advice (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,7 +20,7 @@ def create_database():
         recommendation TEXT
     );
     """)
-
+    
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS market_trends (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -37,7 +37,17 @@ def create_database():
         recommendation TEXT
     );
     """)
-
+        
+    # Use the original structure for recommendations table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS recommendations (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        prompt TEXT,
+        farm_advice TEXT,
+        market_advice TEXT
+    );
+    """)
+    
     conn.commit()
     conn.close()
 
