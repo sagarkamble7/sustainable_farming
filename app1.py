@@ -94,7 +94,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Initialize AI system
-ai_system = SustainableFarmingAI(r"C:\Users\USER\OneDrive\Desktop\Farmer_advisor_agentic_ai\farmer_advisor_dataset.csv", r"C:\Users\USER\OneDrive\Desktop\Farmer_advisor_agentic_ai\market_researcher_dataset.csv")
+ai_system = SustainableFarmingAI(r"D:\sustainable_farming_app\farmer_advisor_dataset.csv", r"D:\sustainable_farming_app\market_researcher_dataset.csv")
 
 # Sidebar for navigation
 st.sidebar.title("🌿 Navigation")
