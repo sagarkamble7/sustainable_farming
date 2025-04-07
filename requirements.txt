@@ -1,6 +1,0 @@
-pandas
-ollama
-sqlite3
-streamlit
-crewai
-scikit-learn
