@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 # Load the farmer advisor dataset
-farmer_df = pd.read_csv(r"D:\sustainable_farming_app\farmer_advisor_dataset.csv")
+farmer_df = pd.read_csv(r"farmer_advisor_dataset.csv")
 
 # Define features and target for crop yield prediction
 X_farm = farmer_df[['Soil_pH', 'Soil_Moisture', 'Temperature_C', 'Rainfall_mm', 'Fertilizer_Usage_kg']]
@@ -29,7 +29,7 @@ print(f"Farmer Dataset Model MSE: {mse_farm}")
 
 
 # Load the market researcher dataset
-market_df = pd.read_csv(r"D:\sustainable_farming_app\market_researcher_dataset.csv")
+market_df = pd.read_csv(r"market_researcher_dataset.csv")
 
 # Define features and target for market price prediction
 X_market = market_df[['Demand_Index', 'Supply_Index', 'Competitor_Price_per_ton', 'Economic_Indicator', 'Weather_Impact_Score']]
