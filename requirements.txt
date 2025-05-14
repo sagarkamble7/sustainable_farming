@@ -131,6 +131,7 @@ rich
 rpds-py
 rsa
 scikit-learn
+sklearn
 scipy
 shellingham
 six
